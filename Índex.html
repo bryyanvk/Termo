@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Termo • Dueto • Quarteto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>TERMO</h1>
+
+<div class="modos">
+  <button onclick="iniciarJogo(1)">Termo</button>
+  <button onclick="iniciarJogo(2)">Dueto</button>
+  <button onclick="iniciarJogo(4)">Quarteto</button>
+</div>
+
+<input type="text" id="palpite" maxlength="5" placeholder="Digite uma palavra">
+<button onclick="enviar()">Enviar</button>
+
+<div id="jogos"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
