@@ -1,47 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #111;
-  color: white;
+  background: #121213;
+  color: #fff;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.modos button {
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+header {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 15px;
+  border-bottom: 1px solid #3a3a3c;
 }
 
-input {
+.modos {
+  margin: 15px 0;
+}
+
+.modos button {
+  background: #3a3a3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modos button:hover {
+  background: #565758;
+}
+
+#palpite {
+  margin: 15px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
   text-transform: uppercase;
+  background: #121213;
+  color: white;
+  border: 2px solid #3a3a3c;
+  width: 180px;
 }
 
 #jogos {
   display: flex;
   justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
 }
 
 .jogo {
   display: grid;
-  grid-template-columns: repeat(5, 50px);
-  gap: 5px;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 6px;
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: repeat(5, 55px);
+  gap: 6px;
 }
 
 .letra {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #444;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #3a3a3c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
-.certa { background: #3aa394; }
-.existe { background: #d3ad69; }
-.errada { background: #312a2c; }
+.certa {
+  background: #538d4e;
+  border-color: #538d4e;
+}
+
+.existe {
+  background: #b59f3b;
+  border-color: #b59f3b;
+}
+
+.errada {
+  background: #3a3a3c;
+  border-color: #3a3a3c;
+}
